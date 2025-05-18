@@ -1,0 +1,41 @@
+{
+  "inbounds": [],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "722309294.web-manage.com.tr",
+            "port": 1520,
+            "users": [
+              {
+                "id": "b12624a6-25d0-484d-8725-3eca4544d522",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Host": ["testspeed-foreign.tci.ir"]
+              }
+            }
+          }
+        }
+      },
+      "tag": "F-VLESS",
+      "mux": {
+        "enabled": false
+      }
+    }
+  ]
+}
